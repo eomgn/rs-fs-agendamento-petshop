@@ -1,0 +1,10 @@
+.container {
+  --max-width: 375px;
+
+  width: min(
+    var(--max-width),
+    100% - var(--px-xl) * 2
+  ); /* Garante margens laterai para evitar que o conteúdo encoste nas bordas da tela  */
+
+  margin-inline: auto;
+}

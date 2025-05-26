@@ -1,0 +1,74 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: #9282fa;
+  --background-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+  /* font-family */
+  --ff-inter-tight: "Inter Tight", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  /* font-weight */
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-extrabold: 800;
+
+  /* font-size */
+  --fs-xs: 0.75rem; /* 12px */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-base: 1rem; /* 16px */
+  --fs-xl: 1.25rem; /* 20px */
+  --fs-2xl: 1.5rem; /* 24px */
+
+  /* px - padding na horizontal - eixo X */
+  --px-xl: 1.25rem; /* 20px */
+
+  /* py - padding na vertical - eixo Y */
+  --py-xs: 0.75rem; /* 12px */
+  --py-base: 1rem; /* 16px */
+  --py-xl: 1.25rem; /* 20px */
+  --py-2xl: 1.5rem; /* 24px */
+}
+
+html {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  line-height: 1.6;
+
+  background-color: var(--background-tertiary);
+  color: var(--content-primary);
+
+  scroll-behavior: smooth;
+}
