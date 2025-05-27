@@ -29,6 +29,18 @@ img {
   display: inline-block;
 }
 
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-brand);
+}
+
 :root {
   --content-primary: #ffffff;
   --content-secondary: #98959d;

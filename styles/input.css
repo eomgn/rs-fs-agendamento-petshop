@@ -19,14 +19,15 @@
   background: url("../assets/icons/arrow-down.svg") no-repeat;
 }
 
-input[type="date"] {
+input {
+  font-family: var(--ff-inter);
   background-color: transparent;
-  flex: 1;
-
+  color: var(--content-secondary);
   border: none;
   outline: none;
-
-  color: var(--content-secondary);
-
   font-size: var(--fs-base);
+}
+
+input[type="date"] {
+  flex: 1;
 }
