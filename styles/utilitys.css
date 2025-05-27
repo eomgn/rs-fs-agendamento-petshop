@@ -13,7 +13,17 @@
 
   position: relative;
 
+  /* keyframe para animar a abertura - de cima p/ baixo */
   animation: slideInDown 2.5s normal;
+
+  /* suavizar a transição */
+  transition: all 0.3s ease-in-out;
+}
+
+@media (width > 60em) {
+  .container {
+    --max-width: 60em; /* 960px */
+  }
 }
 
 @keyframes slideInDown {

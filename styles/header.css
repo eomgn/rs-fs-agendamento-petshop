@@ -6,3 +6,15 @@ header {
     padding-block: 0.25rem 0.75rem;
   }
 }
+
+@media (width > 60em) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    & p {
+      padding: 0;
+    }
+  }
+}
