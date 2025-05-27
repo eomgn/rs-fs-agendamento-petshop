@@ -9,6 +9,12 @@
   padding: 0;
 }
 
+h2 {
+  color: #f5f4f5;
+  font-size: var(--fs-2xl);
+  line-height: 32px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -16,6 +22,11 @@ a {
 
 ul[role="list"] {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
 }
 
 :root {
@@ -29,6 +40,7 @@ ul[role="list"] {
   --background-tertiary: #23242c;
   --background-brand: #9282fa;
   --background-highlights: #bdb4fa;
+  --background-logo: #2e2c30;
 
   --border-primary: #3e3c41;
   --border-secondary: #86818c;
@@ -71,4 +83,13 @@ html {
   color: var(--content-primary);
 
   scroll-behavior: smooth;
+}
+
+.logo {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--background-logo);
+
+  border-bottom-right-radius: 12px;
+  width: 9.56rem;
+  height: 3rem;
 }

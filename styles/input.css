@@ -1,0 +1,31 @@
+.input-wrapper {
+  width: fit-content;
+  height: 3rem;
+
+  border: 1px solid var(--border-primary);
+  padding: 0.87rem 0.75rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+
+  & i {
+    margin-right: 0.5rem;
+  }
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: url("../assets/icons/arrow-down.svg") no-repeat;
+}
+
+input[type="date"] {
+  background-color: transparent;
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  color: var(--content-secondary);
+
+  font-size: var(--fs-base);
+}

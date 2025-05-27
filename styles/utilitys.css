@@ -7,4 +7,6 @@
   ); /* Garante margens laterai para evitar que o conteúdo encoste nas bordas da tela  */
 
   margin-inline: auto;
+
+  padding-top: 0.75rem;
 }
