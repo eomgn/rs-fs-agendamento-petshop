@@ -109,6 +109,8 @@ html {
   width: 9.56rem;
   height: 3rem;
   z-index: 1;
+
+  animation: slideInLeft 2.5s normal;
 }
 
 .floating-button {
@@ -128,8 +130,30 @@ html {
   color: #050505;
   background-color: var(--content-brand);
   box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+
+  animation: slideInRight 2.5s normal;
 }
 
 .floating-button:hover {
   background-color: var(--background-highlights);
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

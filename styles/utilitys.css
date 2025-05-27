@@ -12,4 +12,16 @@
   margin-top: 3rem;
 
   position: relative;
+
+  animation: slideInDown 2.5s normal;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
