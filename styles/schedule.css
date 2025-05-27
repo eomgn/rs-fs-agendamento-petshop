@@ -1,0 +1,71 @@
+.schedule {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 2rem;
+}
+
+.schedule-period {
+  width: 100%;
+  background-color: var(--background-logo);
+  border-radius: 0.625rem;
+
+  & header {
+    display: flex;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border-divisor);
+
+    & strong {
+      flex: 1;
+      margin-left: 0.75rem;
+    }
+
+    & span {
+      font-weight: var(--fw-extrabold);
+      color: var(--content-secondary);
+    }
+  }
+
+  & ul[role="list"] {
+    padding: 1.25rem;
+  }
+}
+
+.schedule-period__item {
+  padding: 0.75rem;
+
+  & .hour {
+    color: var(--content-primary);
+    font-weight: var(--fw-md);
+  }
+
+  & .name-pet {
+    font-weight: var(--fw-extrabold);
+    font-weight: var(--fw-md);
+    padding-left: 0.75rem;
+  }
+
+  & .name-owner {
+    color: var(--content-secondary);
+  }
+
+  & .description {
+    color: var(--content-secondary);
+  }
+
+  & .remove {
+    display: flex;
+    justify-content: end;
+    font-size: var(--fs-xs);
+    color: var(--content-tertiary);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--content-primary);
+      text-decoration: underline;
+    }
+  }
+
+  & + li {
+    border-top: 1px solid var(--border-divisor);
+  }
+}

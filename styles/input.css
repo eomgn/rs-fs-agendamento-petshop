@@ -13,6 +13,7 @@
   }
 }
 
+/* webkit para alterar o padrão do icone de calendario do input */
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
   background: url("../assets/icons/arrow-down.svg") no-repeat;
