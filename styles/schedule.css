@@ -6,7 +6,7 @@
 
 .schedule-period {
   width: 100%;
-  background-color: var(--background-logo);
+  background-color: var(--background-tertiary);
   border-radius: 0.625rem;
 
   & header {
