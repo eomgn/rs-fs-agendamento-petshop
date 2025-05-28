@@ -20,6 +20,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.display-none {
+  display: none;
+}
+
 @media (width > 60em) {
   .container {
     --max-width: 60em; /* 960px */

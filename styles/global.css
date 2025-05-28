@@ -108,7 +108,7 @@ html {
   border-bottom-right-radius: 12px;
   width: 9.56rem;
   height: 3rem;
-  z-index: 1;
+  z-index: 2;
 
   animation: slideInLeft 2.5s normal;
 }

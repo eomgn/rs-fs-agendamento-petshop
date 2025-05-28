@@ -49,7 +49,7 @@
             <span>09h-12h</span>
           </header>
           <ul role="list">
-            <!-- exemplo -->
+            <!-- example -->
             <li class="schedule-period__item">
               <strong class="hour">09:00</strong>
               <span class="name-pet">Thor</span>
@@ -68,7 +68,7 @@
             <span>13h-18h</span>
           </header>
           <ul role="list">
-            <!-- exemplo -->
+            <!-- example -->
             <li class="schedule-period__item">
               <strong class="hour">09:00</strong>
               <span class="name-pet">Thor</span>
@@ -103,7 +103,7 @@
             <span>19h-21h</span>
           </header>
           <ul role="list">
-            <!-- exemplo -->
+            <!-- example -->
             <li class="schedule-period__item">
               <strong class="hour">09:00</strong>
               <span class="name-pet">Thor</span>
@@ -116,12 +116,122 @@
       </main>
     </div>
     <!-- button new schedule -->
-    <button class="floating-button">Novo agendamento</button>
+    <button class="floating-button open-modal">Novo agendamento</button>
 
     <!-- modal -->
-    <div class="view-modal">
-      <div class="container">
-        <p>x</p>
+    <div class="modal">
+      <div class="modal-wrapper">
+        <button class="close-modal">
+          <i><img src="./assets/icons/close-modal.svg" alt="" /></i>
+        </button>
+        <header class="modal--header">
+          <h2>Agende um atendimento</h2>
+          <p>Preencha os dados do cliente para realizar o agendamento:</p>
+        </header>
+
+        <div class="modal--body">
+          <form>
+            <label for="owner">
+              Nome do tutor
+              <div class="input-wrapper">
+                <i>
+                  <img src="./assets/icons/owner.svg" alt="calendário" />
+                </i>
+                <input
+                  type="text"
+                  name="owner"
+                  id="owner"
+                  placeholder="Insira o nome do tutor"
+                  required
+                />
+              </div>
+            </label>
+
+            <label for="pet">
+              Nome do pet
+              <div class="input-wrapper">
+                <i>
+                  <img src="./assets/icons/pet.svg" alt="calendário" />
+                </i>
+                <input
+                  type="text"
+                  name="pet"
+                  id="pet"
+                  placeholder="Insira o nome do pet"
+                  required
+                />
+              </div>
+            </label>
+
+            <label for="telephone">
+              Telefone
+              <div class="input-wrapper">
+                <i>
+                  <img src="./assets/icons/telephone.svg" alt="calendário" />
+                </i>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  placeholder="(88) 0 0000-0000"
+                  required
+                />
+              </div>
+            </label>
+
+            <label for="description">
+              Telefone
+              <textarea
+                name="description"
+                id="description"
+                cols="50"
+                rows="3"
+                placeholder="Descrição"
+                required
+              ></textarea>
+            </label>
+
+            <div class="date-hour">
+              <label for="date-schedule">
+                Data
+                <div class="input-wrapper">
+                  <i>
+                    <img
+                      src="./assets/icons/calendar.svg"
+                      alt="icone de calendario"
+                    />
+                  </i>
+                  <input
+                    type="date"
+                    name="date-schedule"
+                    id="date-schedule"
+                    required
+                  />
+                </div>
+              </label>
+
+              <label for="hour-schedule">
+                Hora
+
+                <div class="select-wrapper">
+                  <i>
+                    <img
+                      src="./assets/icons/hour.svg"
+                      alt="icone de calendario"
+                    />
+                  </i>
+                  <select name="hour-schedule" id="hour-schedule" required>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                  </select>
+                </div>
+              </label>
+              <!-- button schedule -->
+            </div>
+            <input type="submit" value="Agendar" />
+          </form>
+        </div>
       </div>
     </div>
   </body>

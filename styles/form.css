@@ -1,0 +1,29 @@
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 1rem;
+  padding-top: 1.75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+
+  font-size: var(--fs-sm);
+  font-weight: 650;
+}
+
+.date-hour {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (width > 60em) {
+  .date-hour {
+    display: flex;
+  }
+}
