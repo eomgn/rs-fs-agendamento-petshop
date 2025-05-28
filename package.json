@@ -1,0 +1,11 @@
+{
+  "name": "agendamento-petshop",
+  "description": "Aplicação web para agendamento de um petshop",
+  "author": "Matheus Gabriel",
+  "scripts": {
+    "server": "json-server --watch server.json --port 3333"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
