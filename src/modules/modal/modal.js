@@ -3,7 +3,7 @@ const closeModal = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
 
 // Alterna a visibilidade da modal
-const toggleModal = () => {
+export const toggleModal = () => {
   modal.classList.toggle("hide");
 };
 

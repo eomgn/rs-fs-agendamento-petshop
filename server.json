@@ -1,3 +1,31 @@
 {
-    "schedules":[]
+  "schedules": [
+    {
+      "id": "1748484005622",
+      "owner": "aaaa",
+      "pet": "aaaa",
+      "tel": "aaa",
+      "description": "aaa",
+      "date": null,
+      "hour": "21"
+    },
+    {
+      "id": "1748484058753",
+      "owner": "aaa",
+      "pet": "aaa",
+      "tel": "aaa",
+      "description": "aaaa",
+      "date": "2025-05-28T23:00:00.000Z",
+      "hour": "20"
+    },
+    {
+      "id": "1748484205025",
+      "owner": "aaa",
+      "pet": "aaa",
+      "tel": "asdasd",
+      "description": "asdasd",
+      "date": "2025-05-28T23:00:00.000Z",
+      "hour": "20"
+    }
+  ]
 }

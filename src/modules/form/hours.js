@@ -3,7 +3,7 @@ import { openingHours } from "../../utils/opening-hours.js";
 
 const select = document.querySelector("#hour-schedule");
 
-export function openHours({ date }) {
+export function openHours(date) {
   // obtem a lista de todos os horarios ja agendados
   // const unavailableHours = dailySchedules.map((schedule) =>
   //   dayjs(schedule.when).format("HH:mm")
@@ -17,7 +17,7 @@ export function openHours({ date }) {
 
     return {
       hour, // a hora propriamente capturada do arquivo opening-rous.js
-      available: isHourPast, // se estiver 'true' indica disponibilidade, se 'false' indica indisponibilidade
+      available: !isHourPast, // se estiver 'true' indica disponibilidade, se 'false' indica indisponibilidade
     };
   });
 
