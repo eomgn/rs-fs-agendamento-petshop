@@ -17,7 +17,7 @@ export function openHours(date) {
 
     return {
       hour, // a hora propriamente capturada do arquivo opening-rous.js
-      available: !isHourPast, // se estiver 'true' indica disponibilidade, se 'false' indica indisponibilidade
+      available: isHourPast, // se estiver 'true' indica disponibilidade, se 'false' indica indisponibilidade
     };
   });
 

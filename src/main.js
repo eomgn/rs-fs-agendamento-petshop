@@ -12,5 +12,6 @@ import "./styles/form.css";
 // importando JS
 import "./modules/modal/modal.js";
 import "./modules/form/submit.js";
+import "./modules/form/date-change.js";
 
 import "./modules/page-load.js";
