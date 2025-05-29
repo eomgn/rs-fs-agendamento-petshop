@@ -8,3 +8,6 @@ import "./styles/input.css";
 import "./styles/schedule.css";
 import "./styles/modal.css";
 import "./styles/form.css";
+
+// importando JS
+import "./modules/modal/modal.js";

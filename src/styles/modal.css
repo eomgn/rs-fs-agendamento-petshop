@@ -8,13 +8,19 @@
   background: rgba(0, 0, 0, 0.01);
   backdrop-filter: blur(6px);
 
-  z-index: 1;
+  opacity: 1;
 
   /* keyframe para animar a abertura - de cima p/ baixo  - A ANIMAÇÃO ESTÁ NO UTILITYS */
-  animation: slideInDown 0.2s normal;
+  animation: slideInDownModal 0.2s normal;
 
   /* suavizar a transição */
   transition: all 0.3s ease-in-out;
+  pointer-events: all;
+}
+
+.modal.hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-wrapper {
@@ -30,6 +36,8 @@
 
   padding: 8px 20px 40px 20px;
 
+  z-index: 10;
+
   /* suavizar a transição */
   transition: all 0.3s ease-in-out;
 
@@ -44,23 +52,33 @@
       font-size: var(--fs-sm);
     }
   }
-}
 
-.close-modal {
-  display: flex;
-  margin-left: auto;
+  & .close-modal {
+    display: flex;
+    margin-left: auto;
 
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  margin-right: -15px;
+    margin-right: -15px;
+  }
 }
 
 @media (width > 60em) {
   .modal-wrapper {
     --max-width: 477px;
     margin-top: 2rem;
+  }
+}
+
+@keyframes slideInDownModal {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
   }
 }
