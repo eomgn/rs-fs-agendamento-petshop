@@ -3,21 +3,26 @@ import { openingHours } from "../../utils/opening-hours.js";
 
 const select = document.querySelector("#hour-schedule");
 
-export function openHours(date) {
+export function openHours({ date, dailySchedules }) {
+  // limpa a lista de horários
+  select.innerHTML = "";
+
   // obtem a lista de todos os horarios ja agendados
-  // const unavailableHours = dailySchedules.map((schedule) =>
-  //   dayjs(schedule.when).format("HH:mm")
-  // );
+  const unavailableHours = dailySchedules.map((schedule) =>
+    dayjs(schedule.date).format("HH:mm")
+  );
 
   // capturando as horas possiveis de agendamento
   const openHours = openingHours.map((hour) => {
     const [scheduleHour] = hour.split(":");
 
-    const isHourPast = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs()); // capturando se a hora é depois da atual
+    const isHourPast = dayjs(date).add(scheduleHour, "hour").isBefore(dayjs()); // capturando se a hora é antes da atual
+
+    const available = !unavailableHours.includes(hour) && !isHourPast; // verifica se já não existe a data e hora registrada
 
     return {
       hour, // a hora propriamente capturada do arquivo opening-rous.js
-      available: isHourPast, // se estiver 'true' indica disponibilidade, se 'false' indica indisponibilidade
+      available: available, // se estiver 'true' indica disponibilidade, se 'false' indica indisponibilidade
     };
   });
 

@@ -2,6 +2,7 @@
 import dayjs from "dayjs";
 import { scheduleNew } from "../../services/schedule-new.js";
 import { toggleModal } from "../modal/modal.js";
+import { load } from "../schedules/load.js";
 
 const form = document.querySelector("form");
 const dateSchedule = document.querySelector("#date-schedule");
@@ -16,7 +17,7 @@ const today = dayjs(new Date()).format("YYYY-MM-DD");
 dateSchedule.value = today;
 dateSchedule.min = today;
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   // console.log("form enviado.");
@@ -43,7 +44,7 @@ form.addEventListener("submit", (event) => {
     // inserir a hora na data - when = 'quando'
     const date = dayjs(dateSchedule.value).add(hour, "hour");
 
-    scheduleNew({
+    await scheduleNew({
       id,
       owner,
       pet,
@@ -55,6 +56,9 @@ form.addEventListener("submit", (event) => {
 
     // fechando o modal ao concluir o submit
     toggleModal();
+
+    // carregando novamente os agendametnso
+    await load();
   } catch (error) {
     alert("Não foi possível realizar o agendamento.");
     console.log(error);
