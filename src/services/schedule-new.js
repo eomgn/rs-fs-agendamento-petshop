@@ -1,8 +1,16 @@
 import { apiConfig } from "./api-config.js";
 
-export function scheduleNew({ id, owner, pet, tel, description, date, hour }) {
+export async function scheduleNew({
+  id,
+  owner,
+  pet,
+  tel,
+  description,
+  date,
+  hour,
+}) {
   try {
-    fetch(`${apiConfig.apiUrl}/schedules`, {
+    await fetch(`${apiConfig.apiUrl}/schedules`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
