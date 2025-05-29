@@ -25,7 +25,7 @@ export function scheduleShow({ dailySchedules }) {
 
       // hour
       hour.classList.add("hour");
-      hour.textContent = dayjs(schedule.date).hour();
+      hour.textContent = dayjs(schedule.date).format("HH:mm");
 
       // name pet
       namePet.classList.add("name-pet");
