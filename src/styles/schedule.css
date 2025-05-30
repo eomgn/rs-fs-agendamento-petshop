@@ -69,3 +69,22 @@
     border-top: 1px solid var(--border-divisor);
   }
 }
+
+@media (width > 60em) {
+  .schedule-period__item {
+    display: flex;
+
+    & .name-pet {
+      padding-left: 0.75rem;
+    }
+
+    & .name-owner {
+      padding-left: 0.4rem;
+      flex: 1;
+    }
+
+    & .remove {
+      flex: 1;
+    }
+  }
+}

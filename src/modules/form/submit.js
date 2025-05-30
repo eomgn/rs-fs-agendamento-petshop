@@ -33,7 +33,7 @@ form.addEventListener("submit", async (event) => {
     const pet = inputPet.value.trim();
 
     // garantindo que não tera espaços vazios no input telefone
-    const tel = inputTelephone.value.trim();
+    const tel = inputTelephone.value;
 
     // garantindo que não tera espaços vazios no input telefone
     const description = inputDescription.value.trim();
@@ -56,6 +56,11 @@ form.addEventListener("submit", async (event) => {
 
     // fechando o modal ao concluir o submit
     toggleModal();
+
+    inputOwer.value = "";
+    inputPet.value = "";
+    inputTelephone.value = "";
+    inputDescription.value = "";
 
     // carregando novamente os agendametnso
     await load();

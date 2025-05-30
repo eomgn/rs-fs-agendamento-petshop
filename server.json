@@ -1,22 +1,13 @@
 {
   "schedules": [
     {
-      "id": "1748491510600",
-      "owner": "a",
-      "pet": "a",
-      "tel": "a",
-      "description": "a",
-      "date": "2025-05-29T12:00:00.000Z",
+      "id": "1748564444954",
+      "owner": "Matheus Gabriel",
+      "pet": "Tranzin",
+      "tel": "88912345678",
+      "description": "Banho e tosa",
+      "date": "2025-05-30T12:00:00.000Z",
       "hour": "09"
-    },
-    {
-      "id": "1748496033104",
-      "owner": "aaaa",
-      "pet": "aaaa",
-      "tel": "aaa",
-      "description": "asdasd",
-      "date": "2025-05-30T19:00:00.000Z",
-      "hour": "16"
     }
   ]
 }
